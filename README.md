@@ -22,7 +22,7 @@ pip install yfinance==0.2.38
 pip install pandas==2.2.2
 pip install plotly
 pip install beautifulsoup4
-
+```
 # Azərbaycanca açıqlama
 
 # Analyzing Historical Stock-Revenue Data and Building a Dashboard
