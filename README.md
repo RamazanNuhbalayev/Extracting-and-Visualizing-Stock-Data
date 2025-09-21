@@ -54,8 +54,9 @@ Add screenshots (`assets/`) to showcase the visuals on LinkedIn.
 ```
 Note: Versions pinned for reproducibility.
 Launch Jupyter - Open "Stock_Revenue_Dashboard.ipynb"
-**Tech stack:** Python · Pandas · Plotly · BeautifulSoup · Yahoo Finance API (`yfinance`)
 ```
+**Tech stack:** Python · Pandas · Plotly · BeautifulSoup · Yahoo Finance API (`yfinance`)
+
 
 ### 4.1 How the Notebook Works
 1. **Pull prices** via `yfinance.download()` (daily granularity).  
