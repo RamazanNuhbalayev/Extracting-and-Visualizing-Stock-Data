@@ -52,9 +52,10 @@ Add screenshots (`assets/`) to showcase the visuals on LinkedIn.
 | pip install beautifulsoup4   |                                                              |                           |
 
 ```
-| Versions pinned for reproducibility. |
-| Launch Jupyter | `jupyter notebook` | Open `Stock_Revenue_Dashboard.ipynb`. |
-
+Note: Versions pinned for reproducibility.
+Launch Jupyter
+jupyter notebook
+Open Stock_Revenue_Dashboard.ipynb
 **Tech stack:** Python · Pandas · Plotly · BeautifulSoup · Yahoo Finance API (`yfinance`)
 
 ### 4.1 How the Notebook Works
