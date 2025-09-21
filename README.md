@@ -1,50 +1,83 @@
-# Description in English:
-# Analyzing Historical Stock-Revenue Data and Building a Dashboard
+# Stock & Revenue Dashboard
 
-This project aims to collect historical stock prices and earnings figures for Tesla and GameStop and visualize them through interactive charts.
+> **Track Tesla and GameStop at a glance — then dive as deep as you like.**
+> A single Jupyter-notebook project that pairs share-price history with quarterly revenue so *anyone* can spot patterns, while tech-savvy users can tweak the code in minutes.
 
-## Project Objective
+---
 
-Enabling users to make better decisions by analyzing financial data and presenting it interactively. The main libraries and technologies used in the project:
-- Collection of stock data through `yfinance' library
-- Extracting revenue data through web scraping
-- Creating graphs with the `plotly' library
+## 1 Why This Matters *(Business View)*
 
-## Functionalities
-1. **Collection of stock prices**: Loading historical stock prices of Tesla and GameStop via `yfinance`.
-2. **Revenue Data Extraction**: Using web scraping techniques, the revenues of Tesla and GameStop are retrieved from the respective web pages.
-3. **Creation of graphs**: Obtained data is visualized with `plotly' and stock prices and returns are compared.
+Financial headlines change daily, but numbers tell the real story. By placing **price** and **performance** side by side, the dashboard helps:
 
-## Required libraries
-To run the project, you need to install the following libraries:
-```bash
-pip install yfinance==0.2.38
-pip install pandas==2.2.2
-pip install plotly
-pip install beautifulsoup4
+* **Investors** gauge whether earnings growth justifies today’s market price.
+* **Managers & analysts** illustrate narratives with clear, shareable visuals.
+* **Students & enthusiasts** explore real-world data without drowning in jargon.
+
+*(Scroll down for a 2-minute “Run it yourself” guide.)*
+
+---
+
+## 2 What You’ll See
+
+| Insight                                   | Example View                                                  |
+| ----------------------------------------- | ------------------------------------------------------------- |
+| **Historical share price** (5-year range) | 📈 Line chart highlighting big swings and milestones.         |
+| **Quarterly revenue**                     | 💰 Bar chart showing how earnings evolve over time.           |
+| **Price ↔ Revenue overlay**               | 🔄 One click to compare market reactions with actual results. |
+
+Add screenshots (`assets/`) to showcase the visuals on LinkedIn.
+
+---
+
+## 3 Quick Start *(No Coding Required)*
+
+1. **Download or clone** the repo from GitHub.
+2. Double-click `Start_Dashboard.bat` *(Windows)* or run `bash start_dashboard.sh` *(macOS/Linux)*.
+3. Your browser opens the notebook; hit **Run All** → interactive charts appear.
+
+> *The script takes care of Python, libraries, and launching Jupyter automatically.*
+
+---
+
+## 4 For Developers & Data Scientists
+
+| Step                         | Command / File                                               | Notes                     |
+| ---------------------------- | ------------------------------------------------------------ | ------------------------- |
+| Create venv                  | `python -m venv venv`                                        | Optional but recommended. |
+| Activate venv                | `source venv/bin/activate`  (`venv\Scripts\activate` on Win) |                           |
+| Install deps                 | \`\`\`bash                                                   |                           |
+| pip install yfinance==0.2.38 |                                                              |                           |
+| pip install pandas==2.2.2    |                                                              |                           |
+| pip install plotly           |                                                              |                           |
+| pip install beautifulsoup4   |                                                              |                           |
+
+```| Versions pinned for reproducibility. |
+| Launch Jupyter | `jupyter notebook` | Open `Stock_Revenue_Dashboard.ipynb`. |
+
+**Tech stack:** Python · Pandas · Plotly · BeautifulSoup · Yahoo Finance API (`yfinance`)
+
+### 4.1 How the Notebook Works
+1. **Pull prices** via `yfinance.download()` (daily granularity).  
+2. **Scrape revenue** tables from Investor Relations pages using BeautifulSoup.  
+3. **Clean & merge** datasets into a tidy `DataFrame`.  
+4. **Plotly Express** renders interactive line & bar charts.  
+5. **Dash export** *(optional)*—run `python to_dash.py` to spin up a standalone web app.
+
+---
+
+## 5 Road-map Ideas
+- [ ] Auto-refresh data with GitHub Actions  
+- [ ] Add margin, EPS & free-cash-flow visuals  
+- [ ] Deploy on Streamlit / HuggingFace Spaces
+
+Pull requests are welcome — fork, branch, code, and open a PR! 🚀
+
+---
+
+## 6 Credits & Contact
+Created by **Ramazan Nuhbalayev** — connect on [LinkedIn](https://www.linkedin.com/) or open an issue for questions.
+
+---
+
+> *Empower your feed with data you can actually use — whether you’re a curious reader or a power user.*
 ```
-# Azərbaycanca açıqlama
-
-# Analyzing Historical Stock-Revenue Data and Building a Dashboard
-
-Bu layihə, Tesla və GameStop şirkətlərinin tarixi səhmlərinin qiymətləri və gəlir göstəricilərini toplamaq və onları interaktiv qrafiklər vasitəsilə vizuallaşdırmaq məqsədi daşıyır.
-
-## Layihənin Məqsədi
-
-Maliyyə məlumatlarının təhlili və onların interaktiv şəkildə təqdim edilməsi ilə istifadəçilərə daha yaxşı qərar vermə imkanı yaratmaq. Layihədə istifadə olunan əsas kitabxana və texnologiyalar:
-- `yfinance` kitabxanası vasitəsilə səhmlərin məlumatlarının toplanması
-- Web scraping vasitəsilə gəlir məlumatlarının çıxarılması
-- `plotly` kitabxanası ilə qrafiklərin qurulması
-
-## Funksionallıqlar
-1. **Səhmlərin qiymətlərinin toplanması**: `yfinance` vasitəsilə Tesla və GameStop səhmlərinin tarixi qiymətləri yüklənir.
-2. **Gəlir məlumatlarının çıxarılması**: Web scraping texnikası ilə Tesla və GameStop şirkətlərinin gəlirləri müvafiq veb səhifələrdən alınır.
-3. **Qrafiklərin yaradılması**: Əldə olunan məlumatlar `plotly` ilə vizuallaşdırılır və səhmlərin qiymətləri ilə gəlirləri müqayisə olunur.
-
-## Tələb olunan kitabxanalar
-Layihəni işə salmaq üçün aşağıdakı kitabxanaları quraşdırmaq lazımdır:
-```bash
-pip install yfinance==0.2.38
-pip install pandas==2.2.2
-pip install plotly
-pip install beautifulsoup4
