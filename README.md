@@ -53,10 +53,9 @@ Add screenshots (`assets/`) to showcase the visuals on LinkedIn.
 
 ```
 Note: Versions pinned for reproducibility.
-Launch Jupyter
-jupyter notebook
-Open Stock_Revenue_Dashboard.ipynb
+Launch Jupyter - Open "Stock_Revenue_Dashboard.ipynb"
 **Tech stack:** Python · Pandas · Plotly · BeautifulSoup · Yahoo Finance API (`yfinance`)
+```
 
 ### 4.1 How the Notebook Works
 1. **Pull prices** via `yfinance.download()` (daily granularity).  
@@ -77,9 +76,9 @@ Pull requests are welcome — fork, branch, code, and open a PR! 🚀
 ---
 
 ## 6 Credits & Contact
-Created by **Ramazan Nuhbalayev** — connect on [LinkedIn](https://www.linkedin.com/) or open an issue for questions.
+Created by **Ramazan Nuhbalayev** — connect on [LinkedIn](https://www.linkedin.com/in/ramazan-nuhbalayev/) or open an issue for questions.
 
 ---
 
 > *Empower your feed with data you can actually use — whether you’re a curious reader or a power user.*
-```
+
